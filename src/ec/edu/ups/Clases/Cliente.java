@@ -73,4 +73,45 @@ public final class Cliente extends Persona  {
         this.frecuente = frecuente;
     }
   
+       //getters and setters
+    public String getFormaPago() {
+        return formaPago;
+    }
+
+    public void setFormaPago(String formaPago) {
+        this.formaPago = formaPago;
+    }
+
+    public String getRuc() {
+        return ruc;
+    }
+
+    public void setRuc(String ruc) {
+        this.ruc = ruc;
+    }
+
+    public boolean isFrecuente() {
+        return frecuente;
+    }
+
+    public void setFrecuente(boolean frecuente) {
+        this.frecuente = frecuente;
+    }
+
+     public static boolean ingresarCliente() {
+        return false;
+
+    }
+     
+      public static boolean modificarCliente() {
+        return false;
+
+    }
+
+       public static boolean eliminarCliente() {
+        return false;
+
+    }
+
+
 }

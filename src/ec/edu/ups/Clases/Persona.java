@@ -58,4 +58,53 @@ public class Persona extends ConsesionarioVehiculos {
         this.apellido = apellido;
         this.telefono = telefono;
     }
+ 
+     //getters and setters
+    public String getCedula() {
+        return cedula;
+    }
+
+    public void setCedula(String cedula) {
+        this.cedula = cedula;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
+    
+     public static boolean ingresarPersona() {
+        return true;
+
+    }
+     
+      public static boolean modificarPersona() {
+        return true;
+
+    }
+
+       public static boolean eliminarPersona() {
+        return false;
+
+    }
 }

@@ -57,5 +57,58 @@ public class Auto extends Vehiculo  {
         this.comididad = comididad;
         this.descapotable = descapotable;
     }
+    //getter and setters
+    public String getCapacidad() {
+        return capacidad;
+    }
+
+    public void setCapacidad(String capacidad) {
+        this.capacidad = capacidad;
+    }
+
+    public String getComididad() {
+        return comididad;
+    }
+
+    public void setComididad(String comididad) {
+        this.comididad = comididad;
+    }
+
+    public String getDescapotable() {
+        return descapotable;
+    }
+
+    public void setDescapotable(String descapotable) {
+        this.descapotable = descapotable;
+    }
+
+    /**
+     * Metodo revisar estado
+     *
+     * @return false
+     */
+    public static boolean revisarEstado() {
+        return false;
+
+    }
+
+    /**
+     * metodo lavar auto
+     *
+     * @return true
+     */
+    public static boolean lavarAuto() {
+        return true;
+
+    }
+
+    /**
+     *metodo de comprar auto
+     * @return false
+     */
+    public static boolean comprarAuto() {
+        return false;
+
     
+}
 }

@@ -10,6 +10,15 @@ package ec.edu.ups.Interfaz;
  * @author Carmen Bravo
  *
  */
-public interface Interfaz {
-    
+//clase abstracta
+public abstract interface Acciones {
+
+    /**
+     * metodos abstractos
+     *  
+     */
+    public abstract String comprar();
+
+    public abstract String vender();
 }
+

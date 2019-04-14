@@ -82,6 +82,53 @@ public  class Funcionario extends Persona {
         this.area = area;
         this.horario = horario;
     }
+   
+    // getters  and setters
+    public String getCargo() {
+        return cargo;
+    }
 
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
+    }
+
+    public double getSalario() {
+        return salario;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+
+    public String getArea() {
+        return area;
+    }
+
+    public void setArea(String area) {
+        this.area = area;
+    }
+
+    public String getHorario() {
+        return horario;
+    }
+
+    public void setHorario(String horario) {
+        this.horario = horario;
+    }
+
+     public static boolean ingresarFuncionario() {
+        return false;
+
+    }
+     
+      public static boolean modificarFuncionario() {
+        return false;
+
+    }
+
+       public static boolean eliminarFuncionario() {
+        return false;
+
+    }
     
 }

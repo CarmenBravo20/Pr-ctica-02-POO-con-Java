@@ -11,7 +11,7 @@ package ec.edu.ups.Clases;
  * @author Carmen Bravo
  *
  */
-public  class Camion extends Vehiculo  {
+public class Camion extends Vehiculo {
 
     /**
      * son atributos de la clase camion
@@ -25,11 +25,13 @@ public  class Camion extends Vehiculo  {
      */
     public Camion() {
     }
+
     /**
      * constructor de la clase camion con sus atributos
+     *
      * @param espacio
      * @param carga
-     * @param pesoTara 
+     * @param pesoTara
      */
 
     public Camion(String espacio, double carga, double pesoTara) {
@@ -39,14 +41,16 @@ public  class Camion extends Vehiculo  {
     }
 
     /**
-     * constructor de la clase camion con sus atributos mas el del su padre vehiculo
+     * constructor de la clase camion con sus atributos mas el del su padre
+     * vehiculo
+     *
      * @param espacio
      * @param carga
      * @param pesoTara
      * @param marca
      * @param color
      * @param modelo
-     * @param placa 
+     * @param placa
      */
     public Camion(String espacio, double carga, double pesoTara, String marca, String color, String modelo, String placa) {
         super(marca, color, modelo, placa);
@@ -54,4 +58,45 @@ public  class Camion extends Vehiculo  {
         this.carga = carga;
         this.pesoTara = pesoTara;
     }
+    //getters and setters
+
+    public String getEspacio() {
+        return espacio;
+    }
+
+    public void setEspacio(String espacio) {
+        this.espacio = espacio;
+    }
+
+    public double getCarga() {
+        return carga;
+    }
+
+    public void setCarga(double carga) {
+        this.carga = carga;
+    }
+
+    public double getPesoTara() {
+        return pesoTara;
+    }
+
+    public void setPesoTara(double pesoTara) {
+        this.pesoTara = pesoTara;
+    }
+
+    public static boolean revisarCamion() {
+        return false;
+        
+    }
+
+    public static boolean darMantenimiento() {
+        return true;
+      
+    }
+
+    public static boolean manejar() {
+        return false;
+
+    }
+
 }
