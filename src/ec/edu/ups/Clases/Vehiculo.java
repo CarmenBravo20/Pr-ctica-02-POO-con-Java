@@ -10,7 +10,7 @@ package ec.edu.ups.Clases;
  * @author Carmen Bravo
  *
  */
-public  class Vehiculo extends ConsesionarioVehiculos{
+public abstract class Vehiculo extends ConsesionarioVehiculos{
 
     /**
      * atributos de la clase vehiculos
@@ -91,12 +91,12 @@ public  class Vehiculo extends ConsesionarioVehiculos{
         this.placa = placa;
     }
 
-      public static void comprar() {
+      public static void comprarVehiculo() {
         
 
     }
      
-      public static void vender() {
+      public static void venderVehiculo() {
         
 
     }
@@ -105,6 +105,13 @@ public  class Vehiculo extends ConsesionarioVehiculos{
         return false;
 
     }
+        //metodo abstractto
+    
+    public abstract String gustar();
+  /**
+     * Metodo to String
+     * @return 
+     */
 
     @Override
     public String toString() {

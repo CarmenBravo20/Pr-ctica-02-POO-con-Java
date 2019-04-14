@@ -5,6 +5,8 @@
  */
 package ec.edu.ups.Clases;
 
+import ec.edu.ups.Interfaz.Acciones;
+
     /**
  * @version 1.2
  * @since 2019
@@ -12,7 +14,7 @@ package ec.edu.ups.Clases;
  *
  */
 //clase hija de Persona
-public  class Funcionario extends Persona {
+public final class Funcionario extends Persona implements Acciones{
     /**
      * son atributos de la clase funcionario
      */
@@ -130,7 +132,40 @@ public  class Funcionario extends Persona {
         return false;
 
     }
+           /**
+     * 
+     * Declaracion de los metodos
+     */
+   
+    public String revisar(){
+        return " El funcionario " + super.getNombre() + " esta yendo a revisar los carros";
+    }
+    
+    public String lavar(){
+        return " El funcionario " + super.getNombre() + " esta lavando el carro";
+    }
+    
 
+    @Override
+    public String comprar() {
+        return " El funcionario " + super.getNombre()+ " compro un carro";
+    }
+
+    @Override
+    public String vender() {
+       return " El funcionario " + super.getNombre() + " vendio el carro";
+    
+    }
+
+    @Override
+    public String conducir() {
+        return " El funcionario " + super.getNombre() + " esta conduciendo";
+    }
+
+       /**
+     * Metodo to String
+     * @return 
+     */
     @Override
     public String toString() {
         return "Funcionario{" + "cargo=" + cargo + ", salario=" + salario + ", area=" + area + ", horario=" + horario + '}';

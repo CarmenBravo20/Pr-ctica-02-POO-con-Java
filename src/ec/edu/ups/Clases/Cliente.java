@@ -4,13 +4,16 @@
  * and open the template in the editor.
  */
 package ec.edu.ups.Clases;
+
+import ec.edu.ups.Interfaz.Acciones;
+
 /**
  * @version 1.2
  * @since 2019
  * @author Carmen Bravo
  *
  */
-public final class Cliente extends Persona  {
+public final class Cliente extends Persona implements Acciones {
 
     /**
      * son atributos de la clase cliente
@@ -27,24 +30,28 @@ public final class Cliente extends Persona  {
 
     /**
      * constructor de la clase cliente con sus atributos
+     *
      * @param formaPago
      * @param ruc
-     * @param frecuente 
+     * @param frecuente
      */
     public Cliente(String formaPago, String ruc, boolean frecuente) {
         this.formaPago = formaPago;
         this.ruc = ruc;
         this.frecuente = frecuente;
     }
+
     /**
-     * constructor de la clase cliente con sus atributos mas los atriutos de la clase padre (persona)
+     * constructor de la clase cliente con sus atributos mas los atriutos de la
+     * clase padre (persona)
+     *
      * @param formaPago
      * @param ruc
      * @param frecuente
      * @param cedula
      * @param nombre
      * @param apellido
-     * @param telefono 
+     * @param telefono
      */
 
     public Cliente(String formaPago, String ruc, boolean frecuente, String cedula, String nombre, String apellido, String telefono) {
@@ -55,7 +62,10 @@ public final class Cliente extends Persona  {
     }
 
     /**
-     * constructor de la clase cliente con sus atributos mas los atriutos de la clase padre (persona) y mas los de la clase abuelo (consesionariovehiculos)
+     * constructor de la clase cliente con sus atributos mas los atriutos de la
+     * clase padre (persona) y mas los de la clase abuelo
+     * (consesionariovehiculos)
+     *
      * @param formaPago
      * @param ruc
      * @param frecuente
@@ -64,7 +74,7 @@ public final class Cliente extends Persona  {
      * @param apellido
      * @param telefono
      * @param codigo
-     * @param direccion 
+     * @param direccion
      */
     public Cliente(String formaPago, String ruc, boolean frecuente, String cedula, String nombre, String apellido, String telefono, int codigo, String direccion) {
         super(cedula, nombre, apellido, telefono, codigo, direccion);
@@ -72,8 +82,8 @@ public final class Cliente extends Persona  {
         this.ruc = ruc;
         this.frecuente = frecuente;
     }
-  
-       //getters and setters
+
+    //getters and setters
     public String getFormaPago() {
         return formaPago;
     }
@@ -98,25 +108,52 @@ public final class Cliente extends Persona  {
         this.frecuente = frecuente;
     }
 
-     public static boolean ingresarCliente() {
-        return false;
-
-    }
-     
-      public static boolean modificarCliente() {
+    public static boolean ingresarCliente() {
         return false;
 
     }
 
-       public static boolean eliminarCliente() {
+    public static boolean modificarCliente() {
         return false;
+
+    }
+
+    public static boolean eliminarCliente() {
+        return false;
+
+    }
+    
+    
+    //declaracion de los metodos
+    public String revisar() {
+        return " El Cliente " + super.getNombre() + " revisa el carro para poderlo comprar";
+    }
+
+    @Override
+    public String comprar() {
+        return " El cliente " + super.getNombre() + " compro un carro";
+    }
+
+    @Override
+    public String vender() {
+        return " El cliente" + super.getNombre() + " vendio su carro porque queria otro más cómodo";
 
     }
 
     @Override
+    public String conducir() {
+        return " El cliente " + super.getNombre() + " esta conduciendo";
+    }
+    
+
+    /**
+     * Metodo to String
+     *
+     * @return
+     */
+    @Override
     public String toString() {
         return "Cliente{" + "formaPago=" + formaPago + ", ruc=" + ruc + ", frecuente=" + frecuente + '}';
     }
-
 
 }

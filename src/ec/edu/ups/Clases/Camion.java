@@ -5,13 +5,15 @@
  */
 package ec.edu.ups.Clases;
 
+import ec.edu.ups.Interfaz.Acciones;
+
 /**
  * @version 1.2
  * @since 2019
  * @author Carmen Bravo
  *
  */
-public class Camion extends Vehiculo {
+public final class Camion extends Vehiculo implements Acciones {
 
     /**
      * son atributos de la clase camion
@@ -98,7 +100,39 @@ public class Camion extends Vehiculo {
         return false;
 
     }
+  
+    //declaracion de los metodos
+   
+    public String revisar() {
+        return " El camion " +  super.getColor() + " esta ya de reparar ";
+    }
 
+    public String lavar() {
+        return " El camion " +  super.getModelo() + " esta lavado  ";
+    }
+
+    @Override
+    public String comprar() {
+        return " El camion " +  super.getModelo() + " es recien comprado" ;
+    }
+
+    @Override
+    public String vender() {
+        return " El camion " +  super.getColor() + " es vendido debido a que necesitaban otro mas grande ";
+
+    }
+
+    @Override
+    public String gustar() {
+        return "El camion " + super.getMarca() + " es bonito ";
+    }
+
+    
+    /**
+     * Metodo to String
+     * @return 
+     */
+   
     @Override
     public String toString() {
         return "Camion{" + "espacio=" + espacio + ", carga=" + carga + ", pesoTara=" + pesoTara + '}';

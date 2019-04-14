@@ -12,7 +12,7 @@ package ec.edu.ups.Clases;
  *
  */
 // clase hija de consesionariovehiculos
-public class Persona extends ConsesionarioVehiculos {
+public abstract class Persona extends ConsesionarioVehiculos {
 
     /**
      * atributos de la clase persona
@@ -107,6 +107,16 @@ public class Persona extends ConsesionarioVehiculos {
         return false;
 
     }
+          /**
+     * Metodo Abstracto
+     * @return String (text)
+     */
+    public abstract String conducir();
+
+    /**
+     * Metodo to String
+     * @return 
+     */
 
     @Override
     public String toString() {

@@ -5,6 +5,8 @@
  */
 package ec.edu.ups.Clases;
 
+import ec.edu.ups.Interfaz.Acciones;
+
 /**
  * @version 1.2
  * @since 2019
@@ -12,8 +14,8 @@ package ec.edu.ups.Clases;
  *
  */
 // clase hija de vehiculo
-public class Auto extends Vehiculo  {
-    
+public final class Auto extends Vehiculo implements Acciones {
+
     /**
      * son atributos de la clase auto
      */
@@ -57,6 +59,7 @@ public class Auto extends Vehiculo  {
         this.comididad = comididad;
         this.descapotable = descapotable;
     }
+
     //getter and setters
     public String getCapacidad() {
         return capacidad;
@@ -103,18 +106,50 @@ public class Auto extends Vehiculo  {
     }
 
     /**
-     *metodo de comprar auto
+     * metodo de comprar auto
+     *
      * @return false
      */
     public static boolean comprarAuto() {
         return false;
 
-    
-}
+    }
+ /**
+     * 
+     * Declaracion de los metodos
+     */
 
+    public String revisar() {
+        return " El Auto " + super.getModelo() + " esta ya de reparar";
+    }
+
+    public String lavar() {
+        return " El Auto " + super.getModelo() + " esta lavado";
+    }
+
+    @Override
+    public String comprar() {
+        return " El Auto " + super.getMarca() + " es recien comprado";
+    }
+
+    @Override
+    public String vender() {
+        return " El Auto de" + super.getPlaca() + " es vendido debido aque necesitaban otro mas grande";
+
+    }
+    @Override
+    public String gustar() {
+        return " El Auto " + super.getMarca() + " es muy bonito ";
+    }
+
+    /**
+     * Metodo to String
+     *
+     * @return
+     */
     @Override
     public String toString() {
         return "Auto{" + "capacidad=" + capacidad + ", comididad=" + comididad + ", descapotable=" + descapotable + '}';
     }
-    
+
 }

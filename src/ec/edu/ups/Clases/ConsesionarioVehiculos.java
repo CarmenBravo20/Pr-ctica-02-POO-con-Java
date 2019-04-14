@@ -52,6 +52,10 @@ public class ConsesionarioVehiculos {
         this.direccion = direccion;
     }
 
+    /**
+     * Metodo to String
+     * @return 
+     */
     @Override
     public String toString() {
         return "ConsesionarioVehiculos{" + "codigo=" + codigo + ", direccion=" + direccion + '}';
