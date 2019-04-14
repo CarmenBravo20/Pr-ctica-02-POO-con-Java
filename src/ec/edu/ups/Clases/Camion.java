@@ -99,4 +99,9 @@ public class Camion extends Vehiculo {
 
     }
 
+    @Override
+    public String toString() {
+        return "Camion{" + "espacio=" + espacio + ", carga=" + carga + ", pesoTara=" + pesoTara + '}';
+    }
+
 }

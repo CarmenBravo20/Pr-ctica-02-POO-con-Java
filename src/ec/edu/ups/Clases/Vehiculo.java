@@ -105,4 +105,10 @@ public  class Vehiculo extends ConsesionarioVehiculos{
         return false;
 
     }
+
+    @Override
+    public String toString() {
+        return "Vehiculo{" + "marca=" + marca + ", color=" + color + ", modelo=" + modelo + ", placa=" + placa + '}';
+    }
+       
 }

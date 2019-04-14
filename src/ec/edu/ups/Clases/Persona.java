@@ -107,4 +107,10 @@ public class Persona extends ConsesionarioVehiculos {
         return false;
 
     }
+
+    @Override
+    public String toString() {
+        return "Persona{" + "cedula=" + cedula + ", nombre=" + nombre + ", apellido=" + apellido + ", telefono=" + telefono + '}';
+    }
+       
 }

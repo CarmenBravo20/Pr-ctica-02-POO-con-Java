@@ -113,5 +113,10 @@ public final class Cliente extends Persona  {
 
     }
 
+    @Override
+    public String toString() {
+        return "Cliente{" + "formaPago=" + formaPago + ", ruc=" + ruc + ", frecuente=" + frecuente + '}';
+    }
+
 
 }

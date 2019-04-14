@@ -52,5 +52,10 @@ public class ConsesionarioVehiculos {
         this.direccion = direccion;
     }
 
+    @Override
+    public String toString() {
+        return "ConsesionarioVehiculos{" + "codigo=" + codigo + ", direccion=" + direccion + '}';
+    }
+
   
 }

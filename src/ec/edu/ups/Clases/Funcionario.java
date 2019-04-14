@@ -130,5 +130,11 @@ public  class Funcionario extends Persona {
         return false;
 
     }
+
+    @Override
+    public String toString() {
+        return "Funcionario{" + "cargo=" + cargo + ", salario=" + salario + ", area=" + area + ", horario=" + horario + '}';
+    }
+       
     
 }
