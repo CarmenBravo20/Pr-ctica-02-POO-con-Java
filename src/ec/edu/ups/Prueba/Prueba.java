@@ -31,8 +31,7 @@ public class Prueba {
         // TODO code application logic here
         System.out.println("***// UNIVERSIDAD POLITECNICA SALESIANA //***");
         System.out.println("***PROGRAMACION ORIENTADA A OBJETOS***");
-        
-        
+        System.out.println("   Relaciones entre clases    ");
         
         Cliente CarlosP = new Cliente("Tarjeta", "26568948", true, "0107593873", "Carlos", "Pelaez", "3012092", 1, "Av. Las Americas");
         System.out.println("");
